@@ -27,6 +27,13 @@ export class CdkfoldingStack extends cdk.Stack {
     
     taskDef.addContainer("FoldingAtHomeContainer", {
       image: ecs.ContainerImage.fromRegistry("richarvey/foldingathome"),
+      command: [
+                 "--user=bgshacklett",
+                 "--team=241085",
+                 "--gpu=false",
+                 "--smp=true",
+                 "--power=full",
+               ],
       logging,
     })
 
