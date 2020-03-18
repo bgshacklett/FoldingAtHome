@@ -1,0 +1,5 @@
+*.js
+node_modules
+cdk.out
+bin/cdkfolding.d.ts
+lib/cdkfolding-stack.d.ts
